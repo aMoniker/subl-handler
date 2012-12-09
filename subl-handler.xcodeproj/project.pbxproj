@@ -13,6 +13,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A07878C2109C002C004947EC /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = A07878BF109C002C004947EC /* App.m */; };
 		A07878C3109C002C004947EC /* NSURL+L0URLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = A07878C1109C002C004947EC /* NSURL+L0URLParsing.m */; };
+		F2B320B71673E986001738A0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B320B51673E986001738A0 /* RegexKitLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		A07878BF109C002C004947EC /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Classes/App.m; sourceTree = "<group>"; };
 		A07878C0109C002C004947EC /* NSURL+L0URLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+L0URLParsing.h"; path = "Classes/NSURL+L0URLParsing.h"; sourceTree = "<group>"; };
 		A07878C1109C002C004947EC /* NSURL+L0URLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+L0URLParsing.m"; path = "Classes/NSURL+L0URLParsing.m"; sourceTree = "<group>"; };
+		F2B320B51673E986001738A0 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = Classes/RegexKitLite.m; sourceTree = "<group>"; };
+		F2B320B61673E986001738A0 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = Classes/RegexKitLite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F2B320B51673E986001738A0 /* RegexKitLite.m */,
+				F2B320B61673E986001738A0 /* RegexKitLite.h */,
 				A07878BE109C002C004947EC /* App.h */,
 				A07878BF109C002C004947EC /* App.m */,
 				A07878C0109C002C004947EC /* NSURL+L0URLParsing.h */,
@@ -182,6 +187,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				A07878C2109C002C004947EC /* App.m in Sources */,
 				A07878C3109C002C004947EC /* NSURL+L0URLParsing.m in Sources */,
+				F2B320B71673E986001738A0 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +225,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = SublHandler;
 			};
 			name = Debug;
@@ -233,6 +240,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = SublHandler;
 			};
 			name = Release;
