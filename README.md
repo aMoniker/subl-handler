@@ -4,6 +4,10 @@ This application enables SublimeText 2 to open `subl:` urls, as Textmate has as 
 
     subl://open/?url=file:///etc/passwd&line=10&column=2
 
+It also works with multiple files in the format output by Phabricator:
+
+    subl://open/?url=file:///root/path/to/repo//path/to/file/one /path/to/file/two /path/to/file/n
+
 Requirements
 ------------
 * OS X
@@ -36,6 +40,7 @@ Author
 * Daisuke Murase :@typester (github, twitter, CPAN, etc..)
 * Scott Wadden (SublimeText 2 port)
 * Andrew Sutherland (Mountain Lion fixes)
+* Jim Greenleaf (multiple file handling)
 
 License
 -------
